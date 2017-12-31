@@ -20,6 +20,5 @@ Then on by opening a new terminal (non root, if file paths within the source cod
 roslaunch dlib_puppeteering dlib_camera
 
 Then on another terminal or sub-terminal:
-go to the blender_api folder within the mirroring source folder and enter:
-/home/meareg/dlib_ws/src/blender_api$ 'blender -y Sophia.blend -P autostart.py'
+go to the blender_api folder within the mirroring source folder and enter: /home/meareg/dlib_ws/src/blender_api$ 'blender -y Sophia.blend -P autostart.py'
 
