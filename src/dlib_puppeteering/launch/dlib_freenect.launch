@@ -1,0 +1,7 @@
+<launch>
+    <node name="freenect_node" pkg="freenect_camera" type="freenect_node">
+        <remap to="/usb_cam_node/image_raw" from="/rgb/image_raw"/>
+    </node>
+    <node name="dlib_puppeteering_node" pkg="dlib_puppeteering" type="dlib_puppeteering_node" output="screen"/>
+    <node pkg="dlib_puppeteering" name="dlib2blender_mapper" type="mapper.py" output="screen" />
+</launch>

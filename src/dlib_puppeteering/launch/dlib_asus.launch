@@ -1,0 +1,11 @@
+<launch>
+    <node name="openni2_camera_node" pkg="openni2_camera" type="openni2_camera_node">
+        <remap to="/usb_cam_node/image_raw" from="/rgb/image"/>
+    </node>
+
+    <node name="dlib_puppeteering_node" pkg="dlib_puppeteering" type="dlib_puppeteering_node" output="screen"/>
+    <!-- name="pupeteery_cores" overwrites the name under initnode in python -->
+    <node pkg="dlib_puppeteering" name="dlib2blender_mapper" type="mapper.py" output="screen" />
+    <!--  <node name="dlib_listener_node" pkg="dlib_puppeteering" type="dlib_listener_node" output="screen"/> -->
+    <!--  <node name="dlib_mapper" pkg="dlib_puppeteering" type="blendshapes_mapper.py" output="screen"/> -->
+</launch>

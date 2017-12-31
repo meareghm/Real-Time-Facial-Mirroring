@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find pau2motors)/test/test.yaml" command="load" />
+    <node name="pau2motors" pkg="pau2motors" type="pau2motors_node.py" />
+</launch>
+

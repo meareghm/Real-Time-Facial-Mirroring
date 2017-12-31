@@ -1,0 +1,16 @@
+<launch>
+    <node name="usb_cam_node" pkg="usb_cam" type="usb_cam_node">
+        <param name="video_device" value="/dev/video0"/>
+        <param name="image_width" value="480"/>
+        <param name="image_height" value="640"/>
+        <param name="pixel_format" value="yuyv"/>
+        <param name="camera_frame_id" value="usb_cam"/>
+        <param name="io_method" value="mmap"/>
+    </node>
+
+    <node name="dlib_puppeteering_node" pkg="dlib_puppeteering" type="dlib_puppeteering_node" output="screen"/>
+    <!-- name="pupeteery_cores" overwrites the name under initnode in python -->
+    <node pkg="dlib_puppeteering" name="dlib2blender_mapper" type="mapper.py" output="screen" />
+    <!--  <node name="dlib_listener_node" pkg="dlib_puppeteering" type="dlib_listener_node" output="screen"/> -->
+    <!--  <node name="dlib_mapper" pkg="dlib_puppeteering" type="blendshapes_mapper.py" output="screen"/> -->
+</launch>
