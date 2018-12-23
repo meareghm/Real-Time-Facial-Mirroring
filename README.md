@@ -1,7 +1,9 @@
-# Realtime_mirroring
-ROS based workspace for dlib_puppeteering and related ROS packages.
-## dlib_puppeteering
-A ros based package for puppeteering with dlib capability is currently in progressive development.
+# Realtime Facial Emotion Mirroring
+ROS based realtime facial emotion mirroring from a 2D webcam human video to a 3D facial avatar model  
+It uses a ROS based communication interface between the Dlib library (used here for realtime face emotion capture) and blender based 3D face avatar animation API.
+### Sample screenshot of realtime facial smile mirroring
+![realtime-smile-mirroring]
+
 ## Install and run
 Open a new terminal and execute the following commands one by one.
 
