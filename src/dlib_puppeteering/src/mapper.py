@@ -51,19 +51,19 @@ class dlib_puppeteering:
      
     # load the models from disk
     path = os.getcwd()+'/models'
-    mouthleft_path= path + '/mouthleft_model.sav'
+    mouthleft_path = path + '/mouthleft_model.sav'
     self.mouthleft_model = joblib.load(mouthleft_path)
 
-    lipupperleft_path= path + '/lipupperleft_model.sav'
+    lipupperleft_path = path + '/lipupperleft_model.sav'
     self.lipupperleft_model = joblib.load(lipupperleft_path)
 
-    leftsmile_path= path + '/leftsmile_model.sav'
+    leftsmile_path = path + '/leftsmile_model.sav'
     self.leftsmile_model = joblib.load(leftsmile_path)
 
-    rightsmile_path= path + '/rightsmile_model.sav'
+    rightsmile_path = path + '/rightsmile_model.sav'
     self.rightsmile_model = joblib.load(rightsmile_path)
 
-    ridgebrow_path= path + '/ridgebrow_model.sav'
+    ridgebrow_path = path + '/ridgebrow_model.sav'
     self.ridgebrow_model = joblib.load(ridgebrow_path)
 
   
