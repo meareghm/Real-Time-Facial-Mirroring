@@ -5,7 +5,7 @@ Realtime facial emotion mirroring from a 2D webcam human video to a 3D facial av
 ## Install and run
 Open a new terminal and execute the following commands one by one.
 
-`git clone https://github.com/hansonrobotics/Realtime_mirroring.git` # Get the necessary ros packages and source codes
+`git clone https://github.com/meareg88/Real-Time-Facial-Mirroring.git` # Get the necessary ros packages and source codes
 ```
 cd Realtime_mirroring
 catkin_make
