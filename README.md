@@ -24,7 +24,7 @@ roslaunch dlib_puppeteering dlib_camera.launch
 ```
 To start/see the mapping/link between dlib_puppeteering and blender_api, Open a new terminal and execute the commands below.
 ```
-cd ~/Realtime_mirroring/src/blender_api
+cd ~/Real-Time-Facial-Mirroring/src/blender_api
 blender -y Sophia.blend -P autostart.py
 ```
 NOTE: the following changes has been made to some parameters in ../blender_api/rigControl/commands.py
