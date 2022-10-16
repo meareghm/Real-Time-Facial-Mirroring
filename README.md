@@ -1,4 +1,4 @@
-# Realtime Facial Emotion Mirroring
+## Realtime Facial Emotion Mirroring
 Realtime facial emotion mirroring from a 2D webcam human video to a 3D facial avatar model. It uses a ROS based communication interface between the Dlib library (used here for realtime face emotion capture) and blender based 3D face avatar animation API.
 ### realtime facial mirroring
 ![Image of Dynamic Reconfigure](realtime-smile-mirroring.png)
