@@ -3,7 +3,7 @@ Realtime facial emotion mirroring from a 2D webcam human video to a 3D facial av
 ### realtime facial mirroring
 ![Image of Dynamic Reconfigure](realtime-smile-mirroring.png)
 ### Install and run
-## To build the code (download the source code)
+#### To build the code (download the source code)
 ```
 cd Real-Time-Facial-Mirroring
 catkin_make
