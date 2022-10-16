@@ -2,11 +2,9 @@
 Realtime facial emotion mirroring from a 2D webcam human video to a 3D facial avatar model. It uses a ROS based communication interface between the Dlib library (used here for realtime face emotion capture) and blender based 3D face avatar animation API.
 ### realtime facial mirroring
 ![Image of Dynamic Reconfigure](realtime-smile-mirroring.png)
-## Install and run
-# To build the code
+### Install and run
+## To build the code (download the source code)
 ```
-## Get the necessary ros packages
-## To download the source code
 cd Real-Time-Facial-Mirroring
 catkin_make
 cd src
@@ -15,7 +13,7 @@ cd ..
 source devel/setup.bash
 
 ```
-In the same terminal or another run the command below to launch "dlib_puppeteering" package.
+run the command below to launch "dlib_puppeteering" package.
 ```
 roslaunch dlib_puppeteering dlib_camera.launch 
 ```
@@ -24,7 +22,7 @@ To start/see the mapping/link between dlib_puppeteering and blender_api, Open a 
 cd ~/Real-Time-Facial-Mirroring/src/blender_api
 blender -y Sophia.blend -P autostart.py
 ```
-NOTE: the following changes has been made to some parameters in ../blender_api/rigControl/commands.py
+NOTE: the following changes have been made in ../blender_api/rigControl/commands.py
 
 16 - Face shapekeys controlled by PAU
 
@@ -33,10 +31,6 @@ NOTE: the following changes has been made to some parameters in ../blender_api/r
 If 1 current shapekeys are controlled directly by PAU, otherwise by default drivers
 
 `self.shapekeysControl = 1`
-## To Exit,
-```
-close blender GUI.
-quit/stop dlib_puppeteering with CTRL+C.
 ```
 ## Error and fix:
 Unable to open /home/..Realtime_mirroring/src/dlib_puppeteering/src/shape_predictor_68_face_landmarks.dat for reading.
